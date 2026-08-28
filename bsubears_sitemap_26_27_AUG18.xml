@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BSU Bears athletics sitemap for Element451 / BearBuddy
+  Revised August 18, 2026. Every URL below was fetched and confirmed to return
+  HTTP 200 with extractable text in <main>. 125 URLs were tested, 0 returned 404.
+
+  THE ONE CHANGE THAT MATTERS
+  Intramurals had TWO parallel Leagues pages. The previous sitemap listed the
+  stale one.
+
+    OLD (removed): /Campus_Recreation/Intramural_Sports/Leagues_page
+                   Returns 200 but holds 65 characters: "Fall 2026 Leagues
+                   Coming Soon!" This is why BearBuddy could not state the fall
+                   lineup or registration dates. The page was not broken, it
+                   was abandoned.
+
+    NEW (added):   /Campus_Recreation/Intramural_Sports/Headlines/LEAGUES_PAGE
+                   Returns 200 with 1,542 characters: the complete Fall 2026
+                   schedule. Quarter 1 is Flag Football, Dodgeball and Ultimate
+                   Frisbee, registration opening Friday August 28 and closing
+                   Thursday September 10 at 11:45 PM. Quarter 2 is Indoor
+                   Soccer and Volleyball, registration opening Monday October 5
+                   and closing Monday October 19. Includes start dates, days,
+                   game times, locations and captains' meetings, plus a
+                   "REGISTER HERE!" link to the dserec dashboard.
+
+  Removing the stale page matters as much as adding the live one. If both are
+  indexed, "Fall 2026 Leagues Coming Soon!" competes with the real schedule.
+
+  CORRECTION TO THE PREVIOUS REVISION'S NOTES
+  The July 28 header stated that "Intramural offerings are not published on
+  bsubears.com" and that the chatbot "cannot be current on which intramural
+  sports are running." Both were accurate for the URL that revision listed, and
+  both are now wrong for the site as a whole. The offerings, dates, times and
+  locations are all published, in crawlable text, at the Headlines URL above.
+  No curated text source is required for the lineup.
+
+  OTHER CHANGES
+  1. ADDED Headlines/CHAMPIONS_PAGE alongside the existing Champions_Page. Both
+     resolve; the Headlines variant is the one the live nav links.
+  2. KEPT General_Information/General_Information_-_Page and did NOT add its
+     twin at Headlines/MAIN_PAGE. Both return 200 with near-identical content
+     (1,492 vs 1,633 characters). Indexing both would duplicate the staff
+     contacts and handbook links for no gain.
+  3. VERIFIED all 20 schedule URLs and all 20 roster URLs. Every one returns 200
+     with substantial content, so the mixed 2025-26 / 2026-27 schedule years in
+     the previous revision are correct as written. Rosters remain 2025-26.
+  4. RETAINED the omission of the 20 per-sport /news URLs, for the same
+     corpus-dilution reason given in the previous revision.
+
+  KNOWN LIMITS THIS SITEMAP STILL CANNOT FIX
+  - Thornburg Fitness Center facility_hours yields 34 characters. The hours live
+    in a monthly calendar widget that produces no extractable text. Still true
+    as of this revision. Facility hours need a curated text source or the bot
+    will keep saying it cannot confirm today's hours. The Thornburg
+    General_Information page is fine at 3,310 characters.
+  - fitness/GroupEX/Spring_2025 is the live URL and returns 1,001 characters,
+    but it is a stale season by name. BSU has not published a current GroupEX
+    page. Not fixable here.
+  - InsideAthletics/SAAC/24-25 is likewise the current live URL despite the old
+    year in the path.
+  - Intramural registration lives on an external system that a bsubears.com
+    sitemap cannot include:
+      https://bridgewater.dserec.com/online/intramurals
+    This URL now also appears as a link on the Headlines LEAGUES_PAGE, so a
+    crawl of that page should pick it up. Verify after ingesting rather than
+    assuming.
+
+    DOMAIN WARNING, UNCHANGED AND STILL LIVE: BearBuddy offered students
+    engage.bridgew.edu/ATHLETICS/rsvp as the intramural registration
+    destination as recently as today. engage.bridgew.edu is EngageBSU, for
+    clubs, groups and campus events. It is never the host for intramural
+    registration. This is a URL-construction error, not stale data here, and
+    cannot be fixed from this file. The rule belongs in the BearBuddy
+    instructions under LINKS / Known domain boundaries.
+
+  - Stale intramural activity names are NOT coming from this site. BearBuddy
+    returns "SIGS Dodgeball Tournament", "Competative Basketball" (with that
+    misspelling), "Outdoor Soccer" and "REC Basketball", and an unpublished
+    phone number, 508-531-2498. None of these strings appear on any
+    bsubears.com page checked, and no intramural page publishes a phone number.
+    Re-ingesting this sitemap will not remove them. Search the knowledge base
+    for "Competative" and "SIGS" to find their actual source.
+
+  - Rate limiting: bsubears.com began returning HTTP 202 challenge responses
+    after roughly 200 rapid requests. If you validate URLs in bulk, pace the
+    requests. A 202 is not a 404.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- ============================================== -->
+  <!-- Homepage & Composite Schedule -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://www.bsubears.com/</loc>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/composite</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- Campus Recreation: highest student-services value -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/index_page</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Intramural_Sports/index</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <!-- THE FIX: live Fall 2026 lineup, dates, times, locations, registration link -->
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Intramural_Sports/Headlines/LEAGUES_PAGE</loc>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <!-- Durable: mission, staff contacts, handbooks, Instagram pointer -->
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Intramural_Sports/General_Information/General_Information_-_Page</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Intramural_Sports/Intramural_Champions/Champions_Page</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Intramural_Sports/Headlines/CHAMPIONS_PAGE</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Club_Sports/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Outdoor_Adventure/General_Information</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/BearBike_Rental-index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Aquatics/index_page</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Aquatics/Pool_Facility</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/fitness/index_page</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <!-- Stale season by name, but this is the live URL -->
+  <url>
+    <loc>https://www.bsubears.com/fitness/GroupEX/Spring_2025</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Fitness/ThornburgFitCtr/General_Information</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- 34 characters only: hours are in a calendar widget with no extractable text -->
+  <url>
+    <loc>https://www.bsubears.com/Campus_Recreation/Fitness/ThornburgFitCtr/facility_hours</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- Men's Sports -->
+  <!-- ============================================== -->
+  <url><loc>https://www.bsubears.com/sports/bsb/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/bsb/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/bsb/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/mbkb/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mbkb/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mbkb/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/mxc/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mxc/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mxc/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/fball/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/fball/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/fball/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/msoc/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/msoc/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/msoc/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/mswimdive/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mswimdive/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mswimdive/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/mten/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mten/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mten/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/mtrack/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mtrack/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/mtrack/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wrest/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wrest/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wrest/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- ============================================== -->
+  <!-- Women's Sports -->
+  <!-- ============================================== -->
+  <url><loc>https://www.bsubears.com/sports/wbkb/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wbkb/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wbkb/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wxc/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wxc/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wxc/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/equest/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/equest/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/equest/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/fh/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/fh/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/fh/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wlax/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wlax/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wlax/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wsoc/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wsoc/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wsoc/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/sball/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/sball/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/sball/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wswimdive/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wswimdive/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wswimdive/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wten/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wten/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wten/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wtrack/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wtrack/2025-26/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wtrack/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <url><loc>https://www.bsubears.com/sports/wvball/index</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wvball/2026-27/schedule</loc><changefreq>weekly</changefreq><priority>0.6</priority></url>
+  <url><loc>https://www.bsubears.com/sports/wvball/2025-26/roster</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+
+  <!-- ============================================== -->
+  <!-- Sports Medicine: student-athlete health -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/Medical_Clearance_Info/Med_Clearance_Overview</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/AT-SM_Staff</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/Sports_Performance/SportsPerform_index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/Illness_Reporting_and_Information</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/forms</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/SM_Resources</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/Info_for_coaches2</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/The_Certified_AT</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- Student-Athlete Resources & Administration -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Student-Athlete_Resources</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <!-- Old year in path, but this is the live URL -->
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/SAAC/24-25</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Diversity/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/staffdirectory/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Employment/Jobs</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Sports_Camps/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Sports_Camps/indexNEW</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Hall_of_Fame/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Award_Winners/Index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Award_Winners/BSU_Major_Award_Winners</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/VisitingTeams/Index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/I_was_a_bear/Frontrushalumni</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/ProspectiveAthletes/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/multimedia/allaccess/day_in_life</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/landing/headlines-featured</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/landing/headlines-archives</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- Facilities -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/Tinsley/tinsley_index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/Tinsley/NEW_Locker_Rooms/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/great_hill_index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/BearPaw/Bear_Paw</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/alumni_park_index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/athletic_complex_index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/kelly_gym_index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/tennis_courts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/Directions_to_BSC</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Facilities/Dorbill/PhotoGallery</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- Fans & Events -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://www.bsubears.com/homecoming/index</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/landing/Fans/digital_program</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Bear_Fan/thecave/index</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Bear_Fan/hotelinfo</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Bear_Fan/Tailgate_policy</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/images/wallpapers/wallpaperindex</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.2</priority>
+  </url>
+
+  <!-- ============================================== -->
+  <!-- PDFs -->
+  <!-- ============================================== -->
+  <url>
+    <loc>https://www.bsubears.com/ProspectiveAthletes/Head_Coach_Contact_Info_2026.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/BSU_Concussion_policy2016.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/Administration/Sports_Medicine/BSUEAP2025.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/Bear_Fan/Family_Guide_2024-2025.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+  <url>
+    <loc>https://www.bsubears.com/InsideAthletics/EADA_2025.pdf</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.4</priority>
+  </url>
+
+</urlset>
