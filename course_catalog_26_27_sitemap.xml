@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Bridgewater State University Academic Catalog (catalog.bridgew.edu)
+  Modern Campus / Acalog. catalog id (catoid) = 22 -> 2026-2027 catalog.
+
+  Generated: 2026-07-28. All 21 navoids harvested from the live catalog nav
+  and spot-verified (navoid 3136, Core Curriculum, returns full content).
+
+  ================================================================
+  READ THIS BEFORE LOADING INTO ELEMENT451
+  ================================================================
+  The 2026-2027 catalog is currently published as a DRAFT. Its own page states:
+
+    "**THIS IS A DRAFT VERSION. THE 2026-2027 CATALOG WILL BE FINALIZED
+      ON SEPTEMBER 1, 2026.**"
+
+  Every page in this catalog carries "**DRAFT**" in its title. If you ingest it
+  now, AskBSU will answer program requirement, tuition and policy questions from
+  a draft that BSU expects to change before September 1. For a student choosing
+  courses, that is a real risk.
+
+  Options, in order of preference:
+  1. Hold this file until after September 1, 2026, then load it. Lowest risk.
+  2. Load it now AND add a knowledge source instructing the bot to state that
+     2026-2027 catalog information is draft until September 1 and to advise
+     students to confirm with their advisor or DegreeWorks. Acceptable if
+     students need Fall 2026 answers before September.
+  3. Re-verify after September 1 regardless. The catoid should stay 22 when the
+     draft is finalized, but confirm, and confirm the navoids too. If BSU
+     publishes the final version as a new catalog rather than promoting the
+     draft, the catoid will change and this file will need regenerating.
+
+  ================================================================
+  WHY THIS IS NOT A FIND-AND-REPLACE OF THE 25-26 FILE
+  ================================================================
+  Acalog identifies catalogs and pages by numeric id, not by year string. The
+  year never appears in the URL. Between the two catalogs:
+
+    catoid  20 -> 22
+    navoids 2600-series -> 3000-series, all different, not offset by a
+            constant, and not in the same order
+
+  A search-and-replace of "25-26" or "20" would have produced a file of URLs
+  that either 404 or silently resolve to the wrong catalog. Every id below was
+  read from the live 2026-2027 nav.
+
+  ================================================================
+  ALSO NOTE
+  ================================================================
+  The 2025-2026 catalog (catoid=20), which the previous sitemap pointed to, is
+  now labeled "[ARCHIVED CATALOG]" by BSU. If you have that file loaded in
+  Element451, it is feeding the bot an archived catalog. Decide whether to keep
+  it for students still on the 25-26 requirements or retire it.
+
+  Scope: top-level narrative and content pages only, matching the previous
+  file's approach. Individual program and course detail pages are not listed.
+  Use generate-bsu-catalog-sitemap.js to enumerate those.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Catalog home -->
+  <url><loc>https://catalog.bridgew.edu/index.php?catoid=22</loc><lastmod>2026-07-28</lastmod></url>
+
+  <!-- Academics: programs, departments, curriculum, courses -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3181</loc><lastmod>2026-07-28</lastmod></url><!-- Academic Programs -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3078</loc><lastmod>2026-07-28</lastmod></url><!-- Academic Programs - Graduate -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3084</loc><lastmod>2026-07-28</lastmod></url><!-- Academic Departments -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3085</loc><lastmod>2026-07-28</lastmod></url><!-- Colleges of the University -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3136</loc><lastmod>2026-07-28</lastmod></url><!-- Core Curriculum -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3173</loc><lastmod>2026-07-28</lastmod></url><!-- Course Descriptions -->
+
+  <!-- Policies -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3180</loc><lastmod>2026-07-28</lastmod></url><!-- Academic Policies and Procedures -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3028</loc><lastmod>2026-07-28</lastmod></url><!-- Graduate Academic Policies and Procedures -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3170</loc><lastmod>2026-07-28</lastmod></url><!-- Compliance Policies of the University -->
+
+  <!-- Money and admission -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3177</loc><lastmod>2026-07-28</lastmod></url><!-- Tuition and Fees -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3178</loc><lastmod>2026-07-28</lastmod></url><!-- Financial Aid -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3083</loc><lastmod>2026-07-28</lastmod></url><!-- Admission -->
+
+  <!-- Calendar and campus -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3065</loc><lastmod>2026-07-28</lastmod></url><!-- Academic Calendar -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3174</loc><lastmod>2026-07-28</lastmod></url><!-- Campus Map -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3024</loc><lastmod>2026-07-28</lastmod></url><!-- Administrative and Other University Offices -->
+
+  <!-- Institutional -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3079</loc><lastmod>2026-07-28</lastmod></url><!-- About Us -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3179</loc><lastmod>2026-07-28</lastmod></url><!-- Accreditations and Certifications -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3077</loc><lastmod>2026-07-28</lastmod></url><!-- Faculty and Librarians -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3172</loc><lastmod>2026-07-28</lastmod></url><!-- Officers of the University -->
+  <url><loc>https://catalog.bridgew.edu/content.php?catoid=22&amp;navoid=3171</loc><lastmod>2026-07-28</lastmod></url><!-- Board of Trustees -->
+
+  <!-- DELIBERATELY OMITTED: Catalog Archives 2013/2014 - 2024/2025
+       (catoid=22, navoid=3080). Excluded by decision, not oversight. It is a
+       gateway to 12 superseded catalogs, and pulling old requirement sets into
+       the bot invites conflicting-source answers. Do not add it back without a
+       reason. -->
+
+</urlset>
