@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Maxwell Library (library.bridgew.edu) - manually maintained sitemap
+  Built 2026-09-09 by walking the site navigation and footer.
+  The site runs on EBSCO Stacks 4.0.125.9 and publishes no sitemap of its own.
+
+  49 URLs: 14 section pages, 12 sub-pages, 23 staff profiles.
+
+  Deliberately excluded:
+    /search-find           blocked by robots.txt ("Disallow: /search" matches it as a prefix)
+    /searching-collections blocked by robots.txt for the same reason
+    /calendar              JavaScript calendar view, little readable text
+    /events/<id>           individual event pages, transient
+    /events?page=          pagination and RSS feed URLs
+    /user/login            blocked by robots.txt
+
+  No <lastmod> values are included. The site does not expose modification
+  dates, and inventing them would be worse than omitting them.
+
+  Hours and research guides are NOT on this host. Point separate sources at:
+    https://bridgew.libcal.com/sitemap.xml    (LibCal: hours, appointments, room booking)
+    https://guides.bridgew.edu/sitemap.xml    (LibGuides: research guides)
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://library.bridgew.edu/</loc></url>
+  <url><loc>https://library.bridgew.edu/borrow-request-0</loc></url>
+  <url><loc>https://library.bridgew.edu/course-reserves</loc></url>
+  <url><loc>https://library.bridgew.edu/educational-resource-center</loc></url>
+  <url><loc>https://library.bridgew.edu/archives-special-collections</loc></url>
+  <url><loc>https://library.bridgew.edu/research-tools-support</loc></url>
+  <url><loc>https://library.bridgew.edu/faculty-services</loc></url>
+  <url><loc>https://library.bridgew.edu/library-instruction-visits</loc></url>
+  <url><loc>https://library.bridgew.edu/visit-library</loc></url>
+  <url><loc>https://library.bridgew.edu/library-news</loc></url>
+  <url><loc>https://library.bridgew.edu/events</loc></url>
+  <url><loc>https://library.bridgew.edu/policies-guidelines</loc></url>
+  <url><loc>https://library.bridgew.edu/gifts-donations</loc></url>
+  <url><loc>https://library.bridgew.edu/directory-listing</loc></url>
+  <url><loc>https://library.bridgew.edu/borrowing-policy</loc></url>
+  <url><loc>https://library.bridgew.edu/technology-lending</loc></url>
+  <url><loc>https://library.bridgew.edu/request-items-other-libraries</loc></url>
+  <url><loc>https://library.bridgew.edu/suggest-new-materials</loc></url>
+  <url><loc>https://library.bridgew.edu/print-scan-0</loc></url>
+  <url><loc>https://library.bridgew.edu/special-collections</loc></url>
+  <url><loc>https://library.bridgew.edu/research-consultation</loc></url>
+  <url><loc>https://library.bridgew.edu/evaluating-sources</loc></url>
+  <url><loc>https://library.bridgew.edu/research-guides-0</loc></url>
+  <url><loc>https://library.bridgew.edu/maxvideo-streaming</loc></url>
+  <url><loc>https://library.bridgew.edu/open-educational-resources-oer</loc></url>
+  <url><loc>https://library.bridgew.edu/liaison-librarians</loc></url>
+  <url><loc>https://library.bridgew.edu/cynthia-svoboda</loc></url>
+  <url><loc>https://library.bridgew.edu/christine-brown</loc></url>
+  <url><loc>https://library.bridgew.edu/christina-walls</loc></url>
+  <url><loc>https://library.bridgew.edu/rachel-emde</loc></url>
+  <url><loc>https://library.bridgew.edu/carleen-loper</loc></url>
+  <url><loc>https://library.bridgew.edu/ian-morrison</loc></url>
+  <url><loc>https://library.bridgew.edu/jennifer-foster</loc></url>
+  <url><loc>https://library.bridgew.edu/michele-kleberg</loc></url>
+  <url><loc>https://library.bridgew.edu/dipti-mehta</loc></url>
+  <url><loc>https://library.bridgew.edu/ellen-crawford</loc></url>
+  <url><loc>https://library.bridgew.edu/dawn-gross</loc></url>
+  <url><loc>https://library.bridgew.edu/joe-holland</loc></url>
+  <url><loc>https://library.bridgew.edu/halie-kerns</loc></url>
+  <url><loc>https://library.bridgew.edu/brittany-normandin</loc></url>
+  <url><loc>https://library.bridgew.edu/katelyn-raposo</loc></url>
+  <url><loc>https://library.bridgew.edu/kara-brinkley</loc></url>
+  <url><loc>https://library.bridgew.edu/gabriel-kemp</loc></url>
+  <url><loc>https://library.bridgew.edu/madison-rosbach</loc></url>
+  <url><loc>https://library.bridgew.edu/amy-spence</loc></url>
+  <url><loc>https://library.bridgew.edu/adam-wigley</loc></url>
+  <url><loc>https://library.bridgew.edu/neil-yoder</loc></url>
+  <url><loc>https://library.bridgew.edu/orson-kingsley</loc></url>
+  <url><loc>https://library.bridgew.edu/herbie-pollard</loc></url>
+</urlset>
