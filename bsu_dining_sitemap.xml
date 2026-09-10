@@ -4,8 +4,7 @@
   Built 2026-09-10. Every URL below was loaded and confirmed to return
   readable text without JavaScript, which the site's own homepage does not.
 
-  19 URLs: 8 dining location pages, 9 other student-facing pages,
-  2 thin category pages (see note below).
+  17 URLs: 8 dining location pages, 9 other student-facing pages.
 
   DELIBERATELY EXCLUDED
 
@@ -18,6 +17,13 @@
   /en-us/                       Homepage. Returns no body text without JavaScript.
   /en-us/meal-plan/meal-plan-quiz   Interactive quiz, no static text.
   /en-us/sodexosustainability/mass-impact   Generic Sodexo corporate content, not BSU specific.
+  /en-us/categories/dining-hall
+  /en-us/categories/retail-dining
+      Both returned "Failed to learn" in Element451 on 2026-09-10. Their
+      location cards are rendered by JavaScript, so there is almost no static
+      text to extract, and the locations they list are already covered by the
+      eight location pages above. Do not re-add.
+
   /en-us/privacy-policy         Not student facing.
   /en-us/terms-and-conditions   Not student facing.
 
@@ -46,12 +52,11 @@
   <url><loc>https://bridgew.sodexomyway.com/en-us/locations/crimson-dining-&amp;-student-lounge</loc></url>
   <url><loc>https://bridgew.sodexomyway.com/en-us/locations/bear-bites-food-truck</loc></url>
 
-  <!-- Maxwell Cafe: verified loading in a browser (hours, address, description).
-       Given percent-encoded here, which is the RFC-correct form for a sitemap.
-       Some clients returned 404 for this path during testing. If this source
-       errors on ingest, swap this one line for the literal form the hours page
-       publishes: https://bridgew.sodexomyway.com/en-us/locations/maxwell-caf&#233;- -->
-  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/maxwell-caf%C3%A9-</loc></url>
+  <!-- Maxwell Cafe: literal accented form, as published by the hours page and as
+       it appears in the browser address bar. The percent-encoded equivalent,
+       .../maxwell-caf%C3%A9-, also ingested successfully on 2026-09-10; swap to it
+       if any future client rejects the literal character. This file is UTF-8. -->
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/maxwell-café-</loc></url>
 
   <!-- Meal plans, nutrition, delivery, sustainability, contacts, catering -->
   <url><loc>https://bridgew.sodexomyway.com/en-us/locations/map</loc></url>
@@ -63,9 +68,5 @@
   <url><loc>https://bridgew.sodexomyway.com/en-us/contact/meet-the-team</loc></url>
   <url><loc>https://bridgew.sodexomyway.com/en-us/contact/feedback</loc></url>
   <url><loc>https://bridgew.sodexomyway.com/en-us/catering/catering</loc></url>
-
-  <!-- Thin category pages: mention GrubHub ordering and vending. Safe to remove. -->
-  <url><loc>https://bridgew.sodexomyway.com/en-us/categories/dining-hall</loc></url>
-  <url><loc>https://bridgew.sodexomyway.com/en-us/categories/retail-dining</loc></url>
 
 </urlset>
