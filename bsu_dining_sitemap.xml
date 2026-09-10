@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  BSU Dining (bridgew.sodexomyway.com) - manually maintained sitemap
+  Built 2026-09-10. Every URL below was loaded and confirmed to return
+  readable text without JavaScript, which the site's own homepage does not.
+
+  17 URLs: 8 dining location pages, 9 other student-facing pages.
+
+  DELIBERATELY EXCLUDED
+
+  /en-us/locations/hours
+      The aggregate hours page. Its markup does not bind each location's
+      name to its own hours, so ingesting it pairs every location with the
+      previous location's times. This is the page that told a student Dunkin'
+      opens at 5:00 p.m., which are The Bear Trap's hours.
+
+  /en-us/                       Homepage. Returns no body text without JavaScript.
+  /en-us/meal-plan/meal-plan-quiz   Interactive quiz, no static text.
+  /en-us/sodexosustainability/mass-impact   Generic Sodexo corporate content, not BSU specific.
+  /en-us/categories/dining-hall
+  /en-us/categories/retail-dining
+      Both returned "Failed to learn" in Element451 on 2026-09-10. Their
+      location cards are rendered by JavaScript, so there is almost no static
+      text to extract, and the locations they list are already covered by the
+      eight location pages above. Do not re-add.
+
+  /en-us/privacy-policy         Not student facing.
+  /en-us/terms-and-conditions   Not student facing.
+
+  NOTES
+
+  The location pages carry regular hours, a Special Hours block with explicit
+  date ranges, plus address and phone. Special Hours entries are NOT removed
+  after they pass: as of this build, four locations still display the Labor Day
+  09/05/2026 to 09/07/2026 entry, and Flynn also shows 08/31/2026 to 09/01/2026
+  and an entry reading "Tuesday Campus BBQ Day" with no date range at all.
+
+  Crimson Dining is published as both "Monday to Sunday 05:00 PM - 11:00 PM"
+  and "Friday - Saturday Closed" on its own page. That contradiction is in
+  BSU Dining's data, not in this sitemap.
+
+  No <lastmod> values are included. The site exposes no modification dates.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Dining locations: one location per page, name in the heading -->
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/the-bear's-den</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/flynn-dining-commons</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/east-campus-commons-dining</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/the-bear-trap</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/dunkin'</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/crimson-dining-&amp;-student-lounge</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/bear-bites-food-truck</loc></url>
+
+  <!-- Maxwell Cafe: literal accented form, as published by the hours page and as
+       it appears in the browser address bar. The percent-encoded equivalent,
+       .../maxwell-caf%C3%A9-, also ingested successfully on 2026-09-10; swap to it
+       if any future client rejects the literal character. This file is UTF-8. -->
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/maxwell-café-</loc></url>
+
+  <!-- Meal plans, nutrition, delivery, sustainability, contacts, catering -->
+  <url><loc>https://bridgew.sodexomyway.com/en-us/locations/map</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/meal-plan/meal-plan-options</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/meal-plan/faq</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/explore/nutrition</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/explore/starship-robot-delivery</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/explore/sustainability</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/contact/meet-the-team</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/contact/feedback</loc></url>
+  <url><loc>https://bridgew.sodexomyway.com/en-us/catering/catering</loc></url>
+
+</urlset>
