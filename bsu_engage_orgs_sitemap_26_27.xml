@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- BSU EngageBSU student organizations (engage.bridgew.edu) - manually maintained sitemap. Built 2026-09-23. 148 URLs. -->
+<!--
+  SCOPE
+  Student Government Association (all 8 pages) plus the Established Student
+  Organizations that have a public EngageBSU microsite (home and contact pages
+  only). Department groups, department programs, club sports and the campus-wide
+  /events and /groups directories are deliberately out of scope.
+
+  HOW THIS LIST WAS BUILT, 2026-09-23
+  The 93 groups in the "Established Student Organization" category were listed
+  from the group directory, giving 92 distinct EngageBSU slugs. Each slug's
+  /home/ and /contact-us/ pages were fetched and checked individually. 71 slugs
+  have real pages; 21 do not and are excluded. Of those 21, 19 have no microsite
+  and return the not-found page, 1 (WBIM) is members-only behind a login, and 1
+  returned nothing. Every slug that has a home page also has a contact page.
+
+  Page sizes at build time: home pages 1,591 to 4,233 characters, median 2,658.
+  Contact pages 1,130 to 2,119, median 1,249. All server-rendered.
+
+  MAINTAINER NOTES (all verified 2026-09-23)
+
+  1. THIS SITE NEVER RETURNS 404. Every URL returns HTTP 200, including ones that
+     do not exist, so status codes cannot validate a URL here. There are three
+     things to watch for, all served as 200:
+       - title exactly "EngageBSU"              = no such page under that slug
+       - title exactly "Campus Home - EngageBSU" = no such page at top level
+       - title exactly "StudentsCommunityPlatform" = members-only, login required
+     A real page has a title ending in "| Bridgewater State University".
+     Re-check this way, never by status code.
+
+  2. Trailing slashes are required and inconsistent. /sga/contact-us/ works and
+     /sga/contact-us silently returns the not-found page. Copy each URL exactly
+     as written below. Do not add or remove a slash.
+
+  3. SGA slugs do not match SGA page titles. /sga/events/ is titled "General
+     Information", /sga/docs/ is "Agendas and Minutes", /sga/past-newsletters/
+     is "Meeting Video Recordings". Do not infer meaning from those slugs.
+
+  4. Group membership changes every year. Groups appear, fold, and build or
+     abandon microsites. Re-run the directory listing and the per-slug check
+     each term rather than assuming this list still holds.
+
+  5. These pages carry student officer names and rosters. That is a deliberate
+     decision recorded at build time, not an oversight. If it is revisited,
+     the contact pages are the ones to drop first.
+
+  6. robots.txt on this host disallows /upload/, /student_docs/, /downloads/,
+     /mobile_ws/ and any URL containing ajax_widget_new. None appear below.
+
+  7. No <lastmod>. The platform does not expose a page modification date, and
+     inventing one would be worse than omitting it.
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://engage.bridgew.edu/ACS/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ACS/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ActiveMinds/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ActiveMinds/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AFC/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AFC/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AfroAm/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AfroAm/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AHP/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AHP/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AKA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AKA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AlphaOmega/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AlphaOmega/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AMA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AMA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Anthro/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Anthro/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/artclub/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/artclub/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ASL/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ASL/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AST/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/AST/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ASU/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ASU/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BAIRhub/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BAIRhub/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BCI/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BCI/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BDBSU/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BDBSU/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BEAM/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BEAM/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BearsWhoCare/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BearsWhoCare/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BestBuddies/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BestBuddies/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Biology/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Biology/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BJJ/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BJJ/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BSUClimbing/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BSUClimbing/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BSUPC/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BSUPC/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BSUTKD/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/BSUTKD/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CASA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CASA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ChemClub/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/ChemClub/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/chessclub/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/chessclub/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CJSA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CJSA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CMI/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CMI/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Crocheters/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Crocheters/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CSClub/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CSClub/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CVSA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/CVSA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/dafrique/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/dafrique/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/DanceCompany/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/DanceCompany/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/DeltaPhiEpsilon/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/DeltaPhiEpsilon/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/EAT/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/EAT/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/EnglishSociety/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/EnglishSociety/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Filmmakers/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Filmmakers/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/FSLC/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/FSLC/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/GammaPhi/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/GammaPhi/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/GBSU/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/GBSU/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Gen1/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Gen1/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Geological/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Geological/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/History/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/History/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/IAMSSTEM/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/IAMSSTEM/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/IFC/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/IFC/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/IPS/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/IPS/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/KappaDeltaPhi/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/KappaDeltaPhi/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/LSA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/LSA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/MENAA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/MENAA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/MSA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/MSA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/NCA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/NCA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/NDEO/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/NDEO/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/NRHH/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/NRHH/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/OOO/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/OOO/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Panhel/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/Panhel/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/PHC/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/PHC/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/PHILCLUB/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/PHILCLUB/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/prelawsociety/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/prelawsociety/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/PRSSA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/PRSSA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/RHA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/RHA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/RMDT/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/RMDT/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SEAM/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SEAM/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/events/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/leadership-team/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/docs/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/news/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/past-newsletters/</loc></url>
+  <url><loc>https://engage.bridgew.edu/sga/surveys-forms/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SigmaChi/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SigmaChi/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SisterScholars/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SisterScholars/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SPYM/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SPYM/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/STA/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/STA/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SVC/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/SVC/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/TheComment/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/TheComment/contact-us/</loc></url>
+  <url><loc>https://engage.bridgew.edu/WomenInStem/home/</loc></url>
+  <url><loc>https://engage.bridgew.edu/WomenInStem/contact-us/</loc></url>
+</urlset>
